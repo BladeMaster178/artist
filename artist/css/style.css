@@ -97,12 +97,16 @@ a:visited {
 
 .container3 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .container4 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.e {
+  padding-left: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
