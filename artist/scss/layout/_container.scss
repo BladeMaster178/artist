@@ -4,14 +4,14 @@ input[type="checkbox"] {
 
   input+label {
     display: block;
-    width: 360px;
+    // width: 360px;
     height: 220px;
     border: none;
     padding: 0;
     margin: 0;
     outline: none;
-    background-image: url('http://lorempixel.com/800/600');
-    background-size: contain;
+    // background-image: url('http://lorempixel.com/800/600');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     /*  transition: .4s;
@@ -47,14 +47,30 @@ input[type="checkbox"] {
     color: black
   }
 
+
+@media (min-width:600px){
+  
   #mainmenu {
     background: #444;
     position: relative;
     overflow: hidden;
     height: 40px;
-    margin: 30px 0
+    margin: 30px 0;
+  
   }
+}
 
+@media (max-width:320px){
+  
+  #mainmenu {
+    background: #444;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    margin: 30px 0;
+  }
+}
+@media (min-width:600px){
   #mainmenu ul {
     list-style: none;
     margin: 0;
@@ -63,9 +79,25 @@ input[type="checkbox"] {
     left: 50%;
     float: left;
     font: 14px Arial, Helvetica, sans-serif;
-    height: 40px
-  }
+    height: 40px;
 
+  }
+}
+
+
+@media (max-width:320px){
+  #mainmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    float: left;
+    font: 14px Arial, Helvetica, sans-serif;
+    height: 40px;
+  }
+}
+@media (min-width:600px){
   #mainmenu ul li {
     position: relative;
     left: -50%;
@@ -73,7 +105,17 @@ input[type="checkbox"] {
     margin: 0 10px;
     height: 40px
   }
-
+}
+  @media (max-width:320px){
+  #mainmenu ul li {
+    position: relative;
+    left: -50%;
+    float: left;
+    margin: 0 10px;
+    height: 40px;
+  }
+}
+@media (min-width:600px){
   #mainmenu ul li a {
     color: #fff;
     display: block;
@@ -81,22 +123,82 @@ input[type="checkbox"] {
     padding: 0 15px;
     line-height: 40px;
   }
-
+}
+  @media (max-width:320px){
+  #mainmenu ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 40px;
+  }
+}
+@media (min-width:600px){
   #mainmenu ul li a:hover {
     background-color: #666;
   }
+}
+  @media (max-width:320px){
+  #mainmenu ul li a:hover {
+    background-color: #666;
+  }
+}
+
+
+
+  // #mainmenu {
+  //   // background: #444;
+  //   position: relative;
+  //   overflow: hidden;
+  //   height: 40px;
+  //   margin: 30px 0;
+  // }
+
+  // #mainmenu ul {
+  //   list-style: none;
+  //   margin: 0;
+  //   padding: 0;
+  //   position: relative;
+  //   left: 50%;
+  //   float: left;
+  //   font: 14px Arial, Helvetica, sans-serif;
+  //   height: 40px
+  // }
+
+  // #mainmenu ul li {
+  //   position: relative;
+  //   left: -50%;
+  //   float: left;
+  //   margin: 0 10px;
+  //   height: 40px
+  // }
+
+  // #mainmenu ul li a {
+  //   // color: #fff;
+  //   display: block;
+  //   text-decoration: none;
+  //   padding: 0 15px;
+  //   line-height: 40px;
+  //   font-size: 20px;
+  // }
+
+  // #mainmenu ul li a:hover {
+  //   background-color: rgb(235, 235, 235);
+  // }
 
   .container3 {
     display: grid;
     // grid-template-columns: 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    
+    grid-template-columns: repeat(auto-fit, minmax(465px, 1fr));
 
 }
 
   .container4 {
     display: grid;
+    grid-gap: 4em;
     // grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   }
 
