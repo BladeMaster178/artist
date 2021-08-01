@@ -32,13 +32,13 @@ input:checked + label {
   z-index: 99999;
 }
 
-input:hover + label {
-  //display: inline-block;
-  overflow: hidden;
-  transition: 1s;
-  display: block;
-  transform: scale(1.2);
-}
+// input:hover + label {
+//   //display: inline-block;
+//   overflow: hidden;
+//   transition: 1s;
+//   display: block;
+//   transform: scale(1.2);
+// }
 
 .text {
   text-align: center;

@@ -42,13 +42,6 @@ input:checked + label {
   z-index: 99999;
 }
 
-input:hover + label {
-  overflow: hidden;
-  transition: 1s;
-  display: block;
-  transform: scale(1.2);
-}
-
 .text {
   text-align: center;
 }
