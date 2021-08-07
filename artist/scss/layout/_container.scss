@@ -39,6 +39,16 @@ input:checked + label {
 //   display: block;
 //   transform: scale(1.2);
 // }
+// input:hover + label {
+//   position:absolute;
+//   left:0;
+//   bottom:0;
+//   right:0;
+//   top:0;
+//   background:rgba(255,255,255, 0.7);
+//   padding:5px;
+//   display:none;
+// }
 
 .text {
   text-align: center;
@@ -226,4 +236,27 @@ a:visited {
 
 .carousel-fade .carousel-item, .carousel-item img  {
   max-height: 100vh;
+}
+
+.holder {
+  position: relative;
+  // width: 100%;
+   height: 220px;
+  //background-size: 100%;
+  //background-image: url('https://curious-world.ru/images/content/art/11-2017/sergey_truhan/11.jpg');
+ // background: #ff6600;
+  //margin:100px auto;
+}
+.block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  display: none;
+}
+.holder:hover .block {
+  display: block;
 }
