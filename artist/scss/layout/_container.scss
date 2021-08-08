@@ -157,6 +157,12 @@ a:visited {
   }
 }
 
+@media (min-width: 480px) and (max-width: 1024px) {
+  .j {
+    font-size: calc(8px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+  }
+}
+
 .leftimg {
   float:left; 
   margin: 7px 7px 7px 0; 
